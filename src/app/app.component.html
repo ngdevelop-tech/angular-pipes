@@ -1,0 +1,184 @@
+<div class="container">
+  <div class="row ">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Upper Case Pipe</h4>
+        <p ngNonBindable>{{'Welcome to Angular Pipes' | uppercase}}</p>
+        <p>{{'Welcome to Angular Pipes' | uppercase}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Lower Case Pipe</h4>
+        <p ngNonBindable>{{'Welcome to Angular Pipes' | lowercase}}</p>
+        <p>{{'Welcome to Angular Pipes' | lowercase}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Title Case Pipe</h4>
+        <p ngNonBindable>{{'welcome to angular pipes' | titlecase}}</p>
+        <p>{{'welcome to angular pipes' | titlecase}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Date Pipe</h4>
+        <p ngNonBindable>{{today | date}}</p>
+        <p>{{today | date}}</p>
+        <hr>
+
+        <p ngNonBindable>{{today | date:'fullDate'}}</p>
+        <p>{{today | date:'fullDate'}}</p>
+        <hr>
+        <p ngNonBindable>{{today | date:'shortTime'}}</p>
+        <p>{{today | date:'shortTime'}}</p>
+        <hr>
+        <p ngNonBindable>{{today | date:'full'}}</p>
+        <p>{{today | date:'full'}}</p>
+        <hr>
+        <p ngNonBindable>{{today | date:'yyyy-MM-dd HH:mm a z'}}</p>
+        <p>{{today | date:'yyyy-MM-dd HH:mm a z'}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Date Pipe</h4>
+        <p ngNonBindable>{{today | date}}</p>
+        <p>{{today | date}}</p>
+        <hr>
+
+        <p ngNonBindable>{{today | date:'fullDate'}}</p>
+        <p>{{today | date:'fullDate'}}</p>
+        <hr>
+        <p ngNonBindable>{{today | date:'shortTime'}}</p>
+        <p>{{today | date:'shortTime'}}</p>
+        <hr>
+        <p ngNonBindable>{{today | date:'full'}}</p>
+        <p>{{today | date:'full'}}</p>
+        <hr>
+        <p ngNonBindable>{{today | date:'yyyy-MM-dd HH:mm a z'}}</p>
+        <p>{{today | date:'yyyy-MM-dd HH:mm a z'}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Decimal Pipe</h4>
+        <p ngNonBindable>{{123456.14 | number}}</p>
+        <p>{{123456.14 | number}}</p>
+        <hr>
+        <p ngNonBindable>{{1.3456 | number:'3.1-2'}}</p>
+        <p>{{1.3456 | number:'3.1-2'}}</p>
+        <hr>
+        <p ngNonBindable>{{123456789 | number:'1.2-2'}}</p>
+        <p>{{123456789 | number:'1.2-2'}}</p>
+        <hr>
+        <p ngNonBindable>{{1.2 | number:'4.5-5'}}</p>
+        <p>{{1.2 | number:'4.5-5'}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Percent Pipe</h4>
+        <p ngNonBindable>{{0.25645 | percent}}</p>
+        <p>{{0.25645 | percent}}</p>
+        <hr>
+        <p ngNonBindable>{{0.25645 | percent:'3.1-5'}}</p>
+        <p>{{0.25645 | percent:'3.1-5'}}</p>
+        <hr>
+        <p ngNonBindable>{{0.25645 | percent:'1.5-5'}}</p>
+        <p>{{0.25645 | percent:'1.5-5'}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Currency Pipe</h4>
+        <p ngNonBindable>{{1234567.5555 | currency}}</p>
+        <p>{{1234567.555 | currency}}</p>
+        <hr>
+
+        <p ngNonBindable>{{1234567 | currency:'INR'}}</p>
+        <p>{{1234567 | currency:'INR'}}</p>
+        <hr>
+
+        <p ngNonBindable>{{1234567 | currency:'CAD': 'symbol' :'1.2-5'}}</p>
+        <p>{{1234567 | currency:'CAD':'symbol' :'1.2-5'}}</p>
+        <hr>
+
+        <p ngNonBindable>{{1234567 | currency:'CAD': 'symbol-narrow' :'1.2-5'}}</p>
+        <p>{{1234567 | currency:'CAD':'symbol-narrow' :'1.2-5'}}</p>
+        <hr>
+
+        <p ngNonBindable>{{1234567.555 | currency:'INR':'symbol':'1.0-0'}}</p>
+        <p>{{1234567.555 | currency:'INR':'symbol':'1.0-0'}}</p>
+
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Slice Pipe</h4>
+        <p ngNonBindable>{{[1,2,3,4,5,6] | slice : 2}}</p>
+        <p>{{[1,2,3,4,5,6] | slice : 2}}</p>
+        <hr>
+        <p ngNonBindable>{{[1,2,3,4,5,6] | slice : 2:4}}</p>
+        <p>{{[1,2,3,4,5,6] | slice : 2:4}}</p>
+        <hr>
+        <p ngNonBindable>{{[1,2,3,4,5,6] | slice : 1:-2}}</p>
+        <p>{{[1,2,3,4,5,6] | slice : 1:-2}}</p>
+        <hr>
+        <p ngNonBindable>{{languages | slice : 2:5}}</p>
+        <p>{{languages | slice : 2:5}}</p>
+        <hr>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Json Pipe</h4>
+        <p ngNonBindable>{{data | json}}</p>
+        <p>{{data | json}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Async Pipe</h4>
+        <p ngNonBindable>{{time | async}}</p>
+        <p>{{time | async}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">I18nSelectPipe</h4>
+        <p ngNonBindable>I am {{'happy' | i18nSelect : emogieMap}}</p>
+        <p>I am {{'happy' | i18nSelect : emogieMap}}</p>
+        <hr>
+        <p ngNonBindable>I am {{'sad' | i18nSelect : emogieMap}}</p>
+        <p>I am {{'sad' | i18nSelect : emogieMap}}</p>
+        <hr>
+        <p ngNonBindable>I am {{'none' | i18nSelect : emogieMap}}</p>
+        <p>I am {{'none' | i18nSelect : emogieMap}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Pipes Chain</h4>
+        <p ngNonBindable>{{time | async | date:'mediumTime'}}</p>
+        <p>{{time | async | date:'mediumTime'}}</p>
+      </div>
+    </div>
+    <div class="card col-md-12">
+      <div class="card-body">
+        <h4 class="card-title">Custom Pipe</h4>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Search String..." #startWith>
+        </div>
+
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let l of languages | filter : startWith.value">{{l}}</li>
+        </ul>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
